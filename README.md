@@ -211,8 +211,8 @@ print("Original list after modification:", arr)
 print("Shallow copy:", shallow_copied)
 print("Deep copy:", deep_copied)
 ```
-**Explanation**: - Shallow Copy: Copies the outer structure but not the nested objects. Changes to nested objects in the original list will affect the shallow copy.
-                 - Deep Copy: Creates a fully independent copy, including all nested objects. Changes to the original list do not affect the deep copy.
+**Explanation**: Shallow Copy: Copies the outer structure but not the nested objects.
+                 Deep Copy: Creates a fully independent copy, including all nested objects.
 
 ---
 
