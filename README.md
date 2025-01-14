@@ -199,6 +199,21 @@ print(unique_squares)  # Output: {1, 4, 9, 16}
 ```
 **Explanation**: Set comprehensions eliminate duplicates automatically.
 
+## Question 19: Shallow and Deep Copy
+```
+import copy
+arr = [[1, 2, 3], [4, 5, 6]]
+shallow_copied = copy.copy(arr)
+deep_copied = copy.deepcopy(arr)
+arr[1][1] = 100
+
+print("Original list after modification:", arr)
+print("Shallow copy:", shallow_copied)
+print("Deep copy:", deep_copied)
+```
+**Explanation**: Shallow Copy: Copies the outer structure but not the nested objects. Changes to nested objects in the original list will affect the shallow copy.
+                 Deep Copy: Creates a fully independent copy, including all nested objects. Changes to the original list do not affect the deep copy.
+
 ---
 
 
