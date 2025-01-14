@@ -201,5 +201,4 @@ print(unique_squares)  # Output: {1, 4, 9, 16}
 
 ---
 
-Feel free to explore and modify these examples to deepen your understanding of Python!
 
