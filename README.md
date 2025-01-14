@@ -213,6 +213,14 @@ print("Deep copy:", deep_copied)
 ```
 **Explanation**: Shallow Copy: Copies the outer structure but not the nested objects.
                  Deep Copy: Creates a fully independent copy, including all nested objects.
+                 
+## Question 20: List Comprehension with Conditional Expression
+```
+result = [x if x % 2 == 0 else x * 2 for x in range(5)] 
+print(result)  #Output: [0,2,2,6,4]
+
+```
+**Explanation**: For each number in the range, if it's even, it's added to the list as-is; if it's odd, it's multiplied by 2 before adding.
 
 ---
 
