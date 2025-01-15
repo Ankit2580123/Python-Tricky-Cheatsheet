@@ -222,6 +222,67 @@ print(result)  #Output: [0,2,2,6,4]
 ```
 **Explanation**: For each number in the range, if it's even, it's added to the list as-is; if it's odd, it's multiplied by 2 before adding.
 
+
+### Question 21: What is the purpose of the `zip` function?
+
+The `zip` function in Python combines two or more iterables (e.g., lists or tuples) element-wise into tuples. The resulting tuples contain one element from each of the iterables, up to the shortest iterable's length.
+
+#### Example:
+```python
+a = [1, 2, 3, 4]
+b = ['a', 'b', 'c', 'd']
+zipped = []
+for i in zip(a, b):
+    zipped.append(i)
+print(zipped)
+```
+
+#### Output:
+```
+[(1, 'a'), (2, 'b'), (3, 'c'), (4, 'd')]
+```
+
+**Explanation:**
+- The `zip` function pairs the elements from `a` and `b` to form tuples.
+- The `zipped` list contains these tuples.
+
+---
+
+### Question 22: How do you merge two dictionaries in Python?
+
+Starting from Python 3.9, you can merge dictionaries using the `|` operator.
+
+#### Example:
+```python
+dict1 = {'a': 1, 'b': 2}
+dict2 = {'c': 1, 'd': 5}
+merged = dict1 | dict2
+print(merged)
+```
+
+#### Output:
+```
+{'a': 1, 'b': 2, 'c': 1, 'd': 5}
+```
+
+**Explanation:**
+- The `|` operator creates a new dictionary by combining the key-value pairs of `dict1` and `dict2`.
+- If both dictionaries have the same key, the value from the second dictionary overrides the value from the first.
+
+#### Note:
+For Python versions below 3.9, you can use the `update` method or dictionary unpacking to achieve the same result:
+
+```python
+dict1 = {'a': 1, 'b': 2}
+dict2 = {'c': 1, 'd': 5}
+# Using update method
+dict1.update(dict2)
+print(dict1)
+
+# Using dictionary unpacking
+merged = {**dict1, **dict2}
+print(merged)
+
 ---
 
 
