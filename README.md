@@ -284,7 +284,7 @@ merged = {**dict1, **dict2}
 print(merged)
 ```
 
-## Question 22: Sort the dictionary based on the values
+## Question 23: Sort the dictionary based on the values
 
 You can sort a dictionary based on its values or keys using the `sorted` function with a custom `key` argument.
 
@@ -315,7 +315,7 @@ print(sort_dict_keys)
 - `sorted(obj.items(), key=lambda item: item[0])` sorts the dictionary by keys in ascending order.
 - The `dict()` constructor converts the sorted items back into a dictionary.
 
-### Question 23: Difference between `is` vs `==`
+### Question 24: Difference between `is` vs `==`
 
 The `is` operator checks whether two variables refer to the same object in memory, whereas `==` checks whether the values of two variables are equal.
 
