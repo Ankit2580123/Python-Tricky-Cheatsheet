@@ -315,6 +315,36 @@ print(sort_dict_keys)
 - `sorted(obj.items(), key=lambda item: item[0])` sorts the dictionary by keys in ascending order.
 - The `dict()` constructor converts the sorted items back into a dictionary.
 
+### Question 23: Difference between `is` vs `==`
+
+The `is` operator checks whether two variables refer to the same object in memory, whereas `==` checks whether the values of two variables are equal.
+
+#### Example:
+```python
+a = [1, 2, 3, 4, 5]
+b = [1, 2, 3, 4, 5]
+c = 5
+d = 5
+
+print(c is d)  # True, because `c` and `d` are integers (immutable) and point to the same memory location.
+print(c == d)  # True, because the values of `c` and `d` are equal.
+
+print(a is b)  # False, because `a` and `b` are different list objects in memory.
+print(a == b)  # True, because the values of `a` and `b` are equal.
+```
+
+#### Output:
+```
+True
+True
+False
+True
+```
+
+**Explanation:**
+- For immutable types like integers and strings, `is` might return `True` because Python reuses objects to optimize memory.
+- For mutable types like lists or dictionaries, `is` returns `False` unless both variables point to the same object in memory.
+
 ---
 
 
