@@ -199,8 +199,8 @@ print(unique_squares)  # Output: {1, 4, 9, 16}
 ```
 **Explanation**: Set comprehensions eliminate duplicates automatically.
 
-## Question 19: Shallow and Deep Copy
-```
+### Question 19: Shallow and Deep Copy
+```python
 import copy
 arr = [[1, 2, 3], [4, 5, 6]]
 shallow_copied = copy.copy(arr)
@@ -210,12 +210,13 @@ arr[1][1] = 100
 print("Original list after modification:", arr)
 print("Shallow copy:", shallow_copied)
 print("Deep copy:", deep_copied)
+
 ```
 **Explanation**: Shallow Copy: Copies the outer structure but not the nested objects.
                  Deep Copy: Creates a fully independent copy, including all nested objects.
                  
 ## Question 20: List Comprehension with Conditional Expression
-```
+```python
 result = [x if x % 2 == 0 else x * 2 for x in range(5)] 
 print(result)  #Output: [0,2,2,6,4]
 
