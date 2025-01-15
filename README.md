@@ -282,6 +282,38 @@ print(dict1)
 # Using dictionary unpacking
 merged = {**dict1, **dict2}
 print(merged)
+```
+
+## Question 22: Sort the dictionary based on the values
+
+You can sort a dictionary based on its values or keys using the `sorted` function with a custom `key` argument.
+
+#### Example:
+```python
+obj = {
+    'a': 1,
+    'b': 5,
+    'c': 4,
+    'd': 10,
+    'e': 8
+}
+sort_dict_values = dict(sorted(obj.items(), key=lambda item: item[1]))
+sort_dict_keys = dict(sorted(obj.items(), key=lambda item: item[0]))
+
+print(sort_dict_values)
+print(sort_dict_keys)
+```
+
+#### Output:
+```
+{'a': 1, 'c': 4, 'b': 5, 'e': 8, 'd': 10}
+{'a': 1, 'b': 5, 'c': 4, 'd': 10, 'e': 8}
+```
+
+**Explanation:**
+- `sorted(obj.items(), key=lambda item: item[1])` sorts the dictionary by values in ascending order.
+- `sorted(obj.items(), key=lambda item: item[0])` sorts the dictionary by keys in ascending order.
+- The `dict()` constructor converts the sorted items back into a dictionary.
 
 ---
 
