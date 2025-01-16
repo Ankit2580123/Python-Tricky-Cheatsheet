@@ -375,9 +375,6 @@ print(x)
 ```
 
 ### Question 26: Use of shuffle and random modules
-Shuffle City Names: Randomly shuffles a list of city names.
-Return a Random City Name: Selects and returns one random city name from the list during each function call.
-
 ```python
 from random import shuffle
 import random
