@@ -374,6 +374,26 @@ print(x)
  final_output=remove_spaces(str_input)
 ```
 
+### Question 26: Use of shuffle and random modules
+Shuffle City Names: Randomly shuffles a list of city names.
+Return a Random City Name: Selects and returns one random city name from the list during each function call.
+
+```python
+from random import shuffle
+import random
+city=['Goa','Chandigarh','Jamshedpur','Patna','Ranchi','Bangalore','Pune','Hyderabad','Gurugram']
+
+def shuffle_city_names(city):
+    shuffle(city)  
+    return city
+
+def return_one_city_in_each_call(city):
+    ans=random.choices(city) #randomly selected one city and return list
+    return ''.join(ans)  #Converted list into string
+print(shuffle_city_names(city))  #shuffle the lists of city just like a cards
+print(f"City Name Randomly Selected: {return_one_city_in_each_call(city)}") #randomly selected one city names
+
+```
 
 ---
 
