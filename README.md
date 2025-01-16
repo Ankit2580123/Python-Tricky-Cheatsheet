@@ -346,6 +346,18 @@ True
 - For immutable types like integers and strings, `is` might return `True` because Python reuses objects to optimize memory.
 - For mutable types like lists or dictionaries, `is` returns `False` unless both variables point to the same object in memory.
 
+### Question 25: Use of strip() method
+
+The `strip` method is used to remove the whitespaces from the string, `lstrip` , `rstrip`, l stands for left, and r stand for right these another two are used for remove left and right side spaces.
+```python
+txt = ",,,,,rrttgg.....Lion....rrr"
+
+x = txt.strip(",.grt")
+
+print(x)
+```
+
+
 ---
 
 
