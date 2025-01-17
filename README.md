@@ -391,6 +391,25 @@ print(shuffle_city_names(city))  #shuffle the lists of city just like a cards
 print(f"City Name Randomly Selected: {return_one_city_in_each_call(city)}") #randomly selected one city names
 
 ```
+### Question 27: Sort String and Numbers
+```python
+input_str = input("Enter the String like [AG5J9L] or [ag5j9l]--> ")
+alphabets = []
+numbers = []
+
+for ch in input_str:
+    if ch.isalpha():
+        alphabets.append(ch)
+    else:
+        numbers.append(ch)
+
+final_merge_sort_list = sorted(alphabets) + sorted(numbers)
+ans = ''.join(final_merge_sort_list)
+print(ans)
+
+```
+#### Note:
+- This script takes a mixed alphanumeric string as input, separates the alphabets and numbers, sorts them individually, and combines them in the order of sorted alphabets followed by sorted numbers.
 
 ---
 
