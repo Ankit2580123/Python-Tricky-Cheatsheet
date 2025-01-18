@@ -411,6 +411,17 @@ print(ans)
 #### Note:
 - This script takes a mixed alphanumeric string as input, separates the alphabets and numbers, sorts them individually, and combines them in the order of sorted alphabets followed by sorted numbers.
 
+### Question 28: finding the Gcd of two numbers
+```python
+def gcd(a, b):
+    while b:
+        a, b = b, a % b
+    return a
+print(gcd(48, 18))  # 6
+```
+#### Note:
+- you can also solve using gcd `math.gcd(a,b)` functions after import math modules
+
 ---
 
 
