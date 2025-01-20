@@ -438,6 +438,39 @@ def binary_search(arr, target):
 
 print(binary_search([1, 2, 3, 4, 5], 3))  # 2
 ```
----
+# Merging Dictionaries in Python
 
+This document explains four different approaches to merge dictionaries in Python.
+
+## Approach 1: Unpacking Method
+The unpacking method uses the `**` operator to merge dictionaries.
+
+```python
+dict1 = {'a': 1, 'b': 2}
+dict2 = {'c': 3, 'd': 4}
+merged = {**dict1, **dict2}
+print(merged)  # Output: {'a': 1, 'b': 2, 'c': 3, 'd': 4}
+
+
+# Approach 2: Using update methods its update the existing dictionary.
+dict1 = {'a': 1, 'b': 2}
+dict2 = {'c': 3, 'd': 4}
+dict1.update(dict2)
+print(dict1)  # Output: {'a': 1, 'b': 2, 'c': 3, 'd': 4}
+
+
+## Approach 3: | Operator its create new dictionary
+dict1 = {'a': 1, 'b': 2}
+dict2 = {'c': 3, 'd': 4}
+merged_dict = dict1 | dict2
+print(merged_dict)  # Output: {'a': 1, 'b': 2, 'c': 3, 'd': 4}
+
+
+## Approach 4: Using dictionary comprehension
+dict1 = {'a': 1, 'b': 2}
+dict2 = {'c': 3, 'd': 4}
+merged_dict = {key: value for d in (dict1, dict2) for key, value in d.items()}
+print(merged_dict)  # Output: {'a': 1, 'b': 2, 'c': 3, 'd': 4}
+
+```
 
