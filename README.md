@@ -477,7 +477,7 @@ input1="The fox jumps over the lazy dog"
 input2="The Lion is the King of Forest"
 #Approach 1
 def find_longest_word(input):
-    split_list=input.split()  #Break the string into the single listand seperated
+    split_list=input.split()  #Break the string into the single list and seperated
     max_length=0
     for item in split_list:
         if len(item)>max_length:
