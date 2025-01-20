@@ -438,7 +438,7 @@ def binary_search(arr, target):
 
 print(binary_search([1, 2, 3, 4, 5], 3))  # 2
 ```
-# Merging Dictionaries in Python
+### Question 30 Merging Dictionaries in Python
 
 This document explains four different approaches to merge dictionaries in Python.
 ```python
@@ -469,5 +469,24 @@ dict2 = {'c': 3, 'd': 4}
 merged_dict = {key: value for d in (dict1, dict2) for key, value in d.items()}
 print(merged_dict)  # Output: {'a': 1, 'b': 2, 'c': 3, 'd': 4}
 
+```
+### Question 31 Longest Word Finder
+```python
+#Write a Python program to find the longest word in a sentence
+input1="The fox jumps over the lazy dog"
+input2="The Lion is the King of Forest"
+#Approach 1
+def find_longest_word(input):
+    split_list=input.split()  #Break the string into the single listand seperated
+    max_length=0
+    for item in split_list:
+        if len(item)>max_length:
+            max_length=len(item)
+            word=item
+    return word,max_length
+
+longest_length=find_longest_word(input1) #jumps-->5
+print(longest_length)
+# longest_length2=find_longest_word(input2) #Forest-->6
 ```
 
