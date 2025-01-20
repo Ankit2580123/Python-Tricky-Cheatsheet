@@ -442,6 +442,7 @@ print(binary_search([1, 2, 3, 4, 5], 3))  # 2
 
 This document explains four different approaches to merge dictionaries in Python.
 ```python
+# Approach 1: The unpacking method uses the `**` operator to merge dictionaries.
 dict1 = {'a': 1, 'b': 2}
 dict2 = {'c': 3, 'd': 4}
 merged = {**dict1, **dict2}
